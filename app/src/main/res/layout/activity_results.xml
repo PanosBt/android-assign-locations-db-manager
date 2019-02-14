@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ResultsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="@string/activity_results_text_view_title"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.089" />
+
+            <TextView
+                android:id="@+id/results_text_view_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorError"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.179" />
+
+            <TableLayout
+                android:id="@+id/results_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="95dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="id"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="user id"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="longitude"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="latitude"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="dt"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/results_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Location Manager</string>
+    <string name="activity_main_text_view_title">Welcome!</string>
+    <string name="activity_main_text_view_guide">Enter data and hit SAVE</string>
+    <string name="button_text_save">save</string>
+    <string name="button_text_next">next</string>
+    <string name="activity_search_text_view_title">Location Data Search</string>
+    <string name="edit_text_userid_hint">user id</string>
+    <string name="edit_text_longitude_hint">longitude</string>
+    <string name="edit_text_latitude_hint">latitude</string>
+    <string name="activity_search_text_view_guide">Enter user id and/or select timestamp and hit SEARCH</string>
+    <string name="button_text_search">search</string>
+    <string name="button_text_back">back</string>
+    <string name="activity_results_text_view_title">Results</string>
+    <string name="activity_results_error_msg">No results found!</string>
+    <string name="activity_search_error_msg_fetching">Could not fetch stored timestamps</string>
+    <string name="activity_search_error_msg_empty_selection">Enter a userid and/or select a timestamp first!</string>
+    <string name="activity_main_error_msg_empty_fields">All Fields Required!</string>
+    <string name="activity_main_error_non_float">longitude and latitude should be decimal numbers!</string>
+</resources>
